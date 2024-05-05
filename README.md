@@ -20,6 +20,7 @@ Welcome to HawkEye, your gateway to integrating the Texas Instruments AWRL1432 r
 - **`testBBB`**: Sends a predefined set of data using the J1939 protocol. It is specifically associated with the PGN 64769.
 - **`j1939_initialization`**: Initializes the J1939 protocol, registers the PGN request handlers, and starts the J1939 task.
 - **`req_callbacks_table`**: Used to register specific callback functions while receiving PGNs.
+- **`j1939_Register_Cmd_Handler`**: Although similar to `j1939_Register_Req_Handler` in usage, this function is intended for registering command handlers. The corresponding implementation for this function needs to be developed by the user, as it is not provided in the sample code.
 
 Replace `CAN_FUNCTION` and `CAN_INTERRUPT_CALLBACK` with your specific CAN communication function and the interrupt callback function, respectively.
 
@@ -30,7 +31,7 @@ Replace `CAN_FUNCTION` and `CAN_INTERRUPT_CALLBACK` with your specific CAN commu
 
 ## License
 
-HawkEye is licensed under the MIT License.
+HawkEye is released under a free open-source license. You are free to use, modify, and distribute this software without any restrictions. You are not required to credit the original authors or retain any original copyright notices.
 
 ## Contact
 
